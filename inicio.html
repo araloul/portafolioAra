@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ara Quijano | Inicio</title>
+  <link rel="stylesheet" href="./css/styles_navbar.css">
+  <link rel="stylesheet" href="./css/style_container.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Content -->
+  <div style="background-image: url(./img/inicio\ .gif); background-size: cover; background-repeat: no-repeat; height: 100vh;">
+    <style>
+      #index{
+        display: none;
+        justify-content: center;
+        padding: 330px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #F7CF2A;
+      }
+    </style>
+    <a href="index.html" id="index"> PULSE </br> START</a>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Función para mostrar la etiqueta después de 4.8 segundos
+    function showLink() {
+      const link = document.getElementById("index");
+      link.style.display = "flex";
+    }
+
+    // Llamar a la función después de 4.8 segundos (4800 milisegundos)
+    setTimeout(showLink, 4800);
+  </script>
+
+</body>
+</html>

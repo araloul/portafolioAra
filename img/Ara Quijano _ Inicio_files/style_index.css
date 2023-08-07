@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Victor+Mono:ital,wght@1,100&display=swap');
+
+body{
+  background-image: url(/img/background.webp);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 100vh;
+}
+
+.container {
+  color: black;
+  background-color:white;
+  margin: 90px;
+  padding: 70px;
+  display: block;
+  text-align: center;
+
+  
+  
+}
+.container h2,
+.container p {
+  margin-bottom: 10px; /* Espacio vertical entre elementos */
+}
+.h6{
+  font-family: "Victor Mono";
+}

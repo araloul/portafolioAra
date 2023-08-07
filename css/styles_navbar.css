@@ -1,0 +1,55 @@
+/* IMPORTAMOS FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P';
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  background-color: #4F3BFD;
+}
+
+.navbar a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a:hover {
+  font-size: 16px;
+  color: #FF549E;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.link-no-blue {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  justify-content: right;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Estilo para la clase "active" (página actual) */
+#inicio_.active {
+  color: #FFE20A;
+}
