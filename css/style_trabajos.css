@@ -1,0 +1,24 @@
+
+/* IMPORTAMOS FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    font-family:"Press Start 2P";
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+  background:  url(/img/rejilla.png), linear-gradient(to bottom right, #ffb4d4, #a6c5f4);
+  background-size: cover; /*toda la pantalla*/
+  
+  height: 100vh; /*Altura al 100% de la ventana*/
+}
+.container{
+  margin: 0px;
+  padding: 0px;
+}
+.h6{
+  font-size: 90px;
+
+}

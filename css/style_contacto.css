@@ -1,34 +1,58 @@
+/* IMPORTAMOS FUENTE */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bungee";
+}
+
 body {
-    background-image: url(/img/background.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-  
-  .container {
-    max-width: 900px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centra el formulario horizontalmente */
-    padding: 110px;
-    font-size: 10px;
-    display: grid;
-    place-items: center; /* Centra verticalmente el contenido */
-    text-align: center;
-  }
-  
-  label {
-    color: white;
-    font-size: 13px;
-  }
-  
-  footer {
-    color: white;
-  }
-  
-  button{
-    padding: 9px;
-    background-color: #FE9EEE;
-    color: white;
-  }
-  button:hover{
-    padding: 12px;
-  }
+  margin: 0;
+  padding: 0;
+  background: url(/img/rejilla.png), linear-gradient(to bottom right, #ffb4d4, #a6c5f4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  padding: 0px;
+  justify-content: flex-end;
+}
+
+.container label {
+  color: rgba(0, 0, 0, 0.658);
+  font-size: 20px;
+}
+
+/* Estilos para el elemento <p> con la clase .escribeme */
+.escribeme{
+  width:700px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+.escribeme p {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 60px;
+}
+
+footer {
+  color: white;
+}
+
+.container button {
+  padding: 9px;
+  margin-left: 80px;
+  background-color: #FE9EEE;
+  color: white;
+}
+
+button:hover {
+  padding: 9px;
+}

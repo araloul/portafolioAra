@@ -1,55 +1,107 @@
 /* IMPORTAMOS FUENTE */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Press Start 2P';
+  font-family:"Bungee";
 }
 
-.header {
-  position: fixed;
-  top: 0;
+.navbar{
+  
+
   left: 0;
   width: 100%;
-  padding: 10px 100px;
-  background-color: #4F3BFD;
+  height: 80px;
+  background-color: white;
+  border: 3px solid #000;
+  box-shadow: 2px 4px #000;
+
+ 
 }
 
 .navbar a {
   font-size: 15px;
-  color: white;
+  
   text-decoration: none;
   margin-left: 40px;
 }
 
-.navbar a:hover {
-  font-size: 16px;
-  color: #FF549E;
-  text-decoration: none;
-  margin-left: 40px;
-}
+
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
-.link-no-blue {
+#index{
+  background-color: #F280B6;
+  border: 3px solid #000;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#index:hover{
   color: white;
+}
+
+#contacto{
+  background-color: #F5D345;
+  border: 3px solid #000;
+  border-radius: 6px;
+}
+#contacto:hover{
+  color: white;
+}
+#trabajos{
+  background-color: #2DADD6;
+  border: 3px solid #000;
+  border-radius: 6px;
+  
+}
+#trabajos:hover{
+  color: white;
+}
+
+ #github{
+  color: #000;
   text-decoration: none;
   margin-right: 20px;
-  justify-content: right;
+  
+}
+#github:hover{
+  color: #F280B6;
+
+}
+#linkedin{
+  color: #000;
+  text-decoration: none;
+  margin-right: 20px;
+  
+}
+#linkedin:hover{
+  color:#F5D345;
+}
+
+#mail{
+  color: #000;
+  text-decoration: none;
+  margin-right: 20px;
+  
+}
+
+#mail:hover{
+  color: #2DADD6;
 }
 
 .icons-container {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   flex-grow: 1;
 }
 
+
 /* Estilo para la clase "active" (página actual) */
-#inicio_.active {
-  color: #FFE20A;
-}
+

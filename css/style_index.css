@@ -1,42 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Victor+Mono:ital,wght@1,100&display=swap');
 
-body{
-  background-image: url(/img/background.webp);
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  height: 100vh;
+/* IMPORTAMOS FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    font-family:"Press Start 2P";
 }
 
-/* .container {
-  color: black;
-  background-image: url(/img/8958988.ai.png);
-  margin: 90p;
-  padding: 70px;
-  display: block;
-  text-align: center;
+body {
 
-  
-  
-} */
-
-.container {
-  color: black;
-  background-image: url(/img/8958988.ai.png);
-  background-size: cover; /* Ajustar la imagen sin recortarla */
+  margin: 0;
+  padding: 0;
+  background:  url(/img/rejilla.png), linear-gradient(to bottom right, #ffb4d4, #a6c5f4);
+  background-size: cover; /*toda la pantalla*/
   background-repeat: no-repeat;
-  background-position: center center; /* Centrar la imagen */
-  margin: 90px;
-  padding: 200px;
-  display: none;
+  height: 100vh; /*Altura al 100% de la ventana*/
+  overflow: hidden; /*NO desplazamiento*/
+}
+
+/*CONTENEDOR PADRE*/
+
+.row {
+  padding-top: 70px;
+  padding-left: 220px;
+  
+  width:3000px;
+    
+
+}
+
+.card-img-top {
+    border: 3px solid #000;
+    background-color: white;
+    border-radius: 9px;
+    overflow: hidden;
+    height: 400px;
+    box-shadow:5px 5px black;
+    color: #000;   
+    
+}
+
+
+
+
+
+/* ICONOS VENTANA CERRAR inicio */
+
+.inicio{
+    height: 40px;
+    background-color: #F280B6;
+    border:3px solid #000;
+    border-radius: 9px 9px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+.informacion {
+ 
+  padding-left: 20px;
+  padding-right:235px;
+  font-size: 20px;
+}
+
+
+
+.grid-container{
+    display:inline-grid;
+    
+    grid-template-columns: repeat(3,1fr);/*Numero de columnas en el grid y el ancho de cada una*/
+    grid-gap: 8px; 
+    padding-right: 10px;
+}
+.card-img-center{
+  background:
+    linear-gradient(to top,#fec6e993 ,#664fe783);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 3px solid #000;
+    margin: 23px;
+    /*padding-top: 27vh;*/
+    height: 350px;
+    
+
+}
+
+
+.soy{
+  padding-top: 10px;
   text-align: center;
+  font-size: 40px;
+  color: #F280B6;
+  text-shadow: 3px 1px white;
 }
-.container h2,
-.container p {
-  margin-bottom: 10px; /* Espacio vertical entre elementos */
+.soy,
+.desarrolladora {
+  margin-bottom: 0; /* Elimina el margen inferior */
 }
-.h6{
-  font-family: "Victor Mono";
+.desarrolladora{
+  text-align: center;
+  font-size:25px;
+  color: #F280B6;
+  text-shadow: 3px 1px white;
 }
-script{
-  padding: 90px;
+.contenedor{
+  padding: 10px;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.171); 
 }
+.estudie{
+ 
+  padding: 15px;
+  font-size: 19px;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+/* Estilos generales que aplican para todas las pantallas */
+
+/* Para pantallas más pequeñas como móviles (425px) */
+@media (max-width: 425px) {
+  .row {
+    
+    padding:10px; /* Reduzco el padding izquierdo para dar espacio en pantallas pequeñas */
+    width: auto; /* Ancho automático para que el contenido se ajuste al tamaño de la pantalla */
+  }
+
+  .card-img-top {
+    height: auto; /* Ajusto la altura automáticamente */
+  }
+
+  .informacion {
+    padding-right: 10px; /* Reduzco el padding derecho para dar espacio en pantallas pequeñas */
+  }
+
+  .soy{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #F280B6;
+    text-shadow: 3px 1px white;
+  }
+  .soy,
+  .desarrolladora {
+    margin-bottom: 0; /* Elimina el margen inferior */
+  }
+  .desarrolladora{
+    text-align: center;
+    font-size:18px;
+    color: #F280B6;
+    text-shadow: 3px 1px white;
+  }
+  .contenedor{
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.171); 
+  }
+  .estudie{
+   
+    padding: 25px;
+    font-size: 13px;
+    color: black;
+    text-shadow: 1px 1px white;
+  }
+}
+
+/* Para pantallas más pequeñas como tablets (768px) */
+/* Estilos generales que aplican para todas las pantallas */
+
+/* Para pantallas más pequeñas como tablets (768px) */
+@media (max-width: 768px) {
+  .row {
+    padding-left: 28px; /* Ajusta el padding izquierdo según tus necesidades */
+    padding-top: 20px; /* Ajusta el padding superior según tus necesidades */
+    width:2200px; /* Ancho automático para que el contenido se ajuste al tamaño de la pantalla */
+  }
+
+  .card-img-top {
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .informacion {
+    padding-right: 0px; /* Ajusta el padding derecho según tus necesidades */
+  }
+
+  /* Reduzco el tamaño de la fuente en .soy y .desarrolladora para evitar problemas de espacio */
+  .soy{
+    font-size: 30px;
+  }
+  .desarrolladora{
+    font-size: 23px;
+  }
+  
+  .estudie{
+    font-size: 18px;
+  }
+  
+  /* Ajusta cualquier otro estilo según tus necesidades específicas para pantallas de 768px */
+}
+
+

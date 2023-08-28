@@ -1,29 +1,34 @@
-let writing = str => {
-    let arrFromStr = str.split("");
-    let i = 0;
-    let printStr = setInterval(function() {
-      document.querySelector('.container').style.display = "block";
-      document.querySelector('.container').innerHTML += arrFromStr[i];
-      i++;
-      if (i === arrFromStr.length) {
-        clearInterval(printStr);
-      }
-    }, 100);
-  };
+let soy = document.getElementsByClassName("soy")[0];
+let desarrolladora = document.getElementsByClassName("desarrolladora")[0];
+let estudie = document.getElementsByClassName("estudie")[0];
 
-  // Llama a la función para que muestre el contenido de la clase "container"
-  writing(document.querySelector('.container').innerText);
+let soy1 = (text = "", tiempo = 1700, className = "") => {
+    return new Promise(resolve => {
+        let arrayCaracteres = text.split("");
+        className.innerHTML = "";
+        let cont = 0;
+        let escribir = setInterval(function () {
+            className.innerHTML += arrayCaracteres[cont];
+            cont++;
+            if (cont === arrayCaracteres.length) {
+                clearInterval(escribir);
+                resolve();
+            }
+        }, tiempo);
+    });
+}
 
+async function startAnimations() {
+    await soy1("Soy Aranza Quijano P.", 100, soy);
+    await soy1("DESARROLLADORA FRONTEND", 100, desarrolladora);
+    
+   document.getElementsByClassName("estudie")[0].style.display = "block";
+   let estudie = document.getElementsByClassName("estudie")[0];
+   
+   setTimeout(function () {
+    estudie.style.display = "block";
+}, 5000);
+    
 
-
-// let writing = str =>{
-//     let arrFromStr = str.split("");
-//     let i = 0;
-//     let printStr   = setInterval (function(){
-//         document.body.innerHTML+= arrFromStr[i]; i++;
-//         if (i === arrFromStr.length){
-//             clearInterval(printStr);
-//         }
-//     },100);
-// };
-
+}
+startAnimations();
