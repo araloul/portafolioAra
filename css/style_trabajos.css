@@ -22,3 +22,14 @@ body {
   font-size: 90px;
 
 }
+
+.col-8{
+  padding-top: 30px;
+  background-color: rgba(255, 255, 255, 0.829);
+  box-shadow: 6px 5px  black;
+}
+
+.title{
+  color: #2DADD6;
+  font-size: 30px;
+}

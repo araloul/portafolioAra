@@ -1,5 +1,4 @@
 /* IMPORTAMOS FUENTE */
-
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 * {
@@ -11,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(/img/rejilla.png), linear-gradient(to bottom right, #ffb4d4, #a6c5f4);
+  background: url(/img/1x/holi.png), linear-gradient(to bottom right, #ffb4d4, #a6c5f4);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -19,25 +18,25 @@ body {
 }
 
 .container {
-  display: flex;
-  padding: 0px;
-  justify-content: flex-end;
+ 
+  padding-top:60px;
+  margin: 9px;
 }
 
-.container label {
+/* .container label {
   color: rgba(0, 0, 0, 0.658);
   font-size: 20px;
-}
+} */
 
 /* Estilos para el elemento <p> con la clase .escribeme */
-.escribeme{
-  width:700px;
-  margin: 10px;
+.escribeme {
+  width: 700px;
+  margin: 10px auto; /* Auto para centrar horizontalmente */
   background-color: antiquewhite;
+  text-align: center; /* Centra el contenido del elemento */
 }
+
 .escribeme p {
-  display: flex;
-  justify-content: center;
   padding: 10px;
   font-size: 60px;
 }
@@ -55,4 +54,28 @@ footer {
 
 button:hover {
   padding: 9px;
+}
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background: url(/img/1x/holi-tablet.png), linear-gradient(to bottom right, #ffb4d4, #a6c5f4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  @media  (max-width: 425px) {
+    body {
+      margin: 0;
+      padding: 0;
+      background: url(/img/1x/holi-celular.png), linear-gradient(to bottom right, #ffb4d4, #a6c5f4);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+  }
 }
